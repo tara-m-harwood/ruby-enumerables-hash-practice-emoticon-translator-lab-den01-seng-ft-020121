@@ -18,6 +18,7 @@ def get_english_meaning(path, japan)
     eng_meaning = ''
     emoji_dict.each do | meaning, lang |
       # p emoji_dict[meaning][:japanese]
+<<<<<<< HEAD
       if emoji_dict[meaning][:japanese] == japan
         eng_meaning = meaning
       end  
@@ -45,4 +46,18 @@ def get_japanese_emoticon(path, english)
 end 
 
 # get_english_meaning("./lib/emoticons.yml", "(Ｔ▽Ｔ)")
+=======
+      if emoji_dict[meaning][:japanese] = japan 
+        
+      # if emoji_dict[meaning][:japanese] = japan
+      #  eng_meaning = meaning
+      #  p eng_meaning
+      # end  
+    end
+   #binding.pry
+   eng_meaning
+end   
+
+get_english_meaning("./lib/emoticons.yml", "(Ｔ▽Ｔ)")
+>>>>>>> f2bd41165a9be11311fe9a5824518f947db164ec
 # test_hash("./lib/emoticons.yml", "(Ｔ▽Ｔ)")
